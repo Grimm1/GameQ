@@ -66,7 +66,9 @@ class Mohaa extends Gamespy
     ];
 
     /**
-     * Query port is always the client port + 97 in MOHAA
+     * Query port starts at 12300 for the first server on the box regardless of its game port 12203 -> 12300
+     * if the only server on the box is on a different port e.g. 12204 the query port is still 12300
+     * a second server on port 12205 would have a port of 12301, in this case use port option in server setup!
      *
      * @param int $clientPort
      *
