@@ -73,7 +73,7 @@ class Quake3 extends Protocol
         // General
         'general' => [
             // target       => source
-            'gametype'   => 'gamename',
+            'gametype'   => 'g_gametype',
             'hostname'   => 'sv_hostname',
             'mapname'    => 'mapname',
             'maxplayers' => 'sv_maxclients',
